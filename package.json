@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/zxxcs/botabsendiscord/issues"
   },
-  "homepage": "https://github.com/zxxcs/botabsendiscord#readme"
+  "homepage": "https://github.com/zxxcs/botabsendiscord#readme",
+  "dependencies": {
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1"
+  }
 }
