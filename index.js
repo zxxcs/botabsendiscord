@@ -33,7 +33,7 @@ client.on('messageCreate', async (msg) => {
     switch (rawinput) {
 
         case 'tes':
-            await msg.channel.send(`Tis`);
+            await msg.channel.send(`123`);
             break;
     }
 
