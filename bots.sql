@@ -14,23 +14,28 @@ drop table if exists Absen;
 drop table if exists siswa;
 
 
-create table siswa
+create table Siswa
 (
-    Nama text NOT NULL ,
-    NIM varchar(10) PRIMARY KEY
+    NIM varchar(10) PRIMARY KEY,
+    Nama text NOT NULL
 );
 
 create table Absen
 (
     ID int PRIMARY KEY,
-    Status int,
+    Tanggal datetime not null,
     NIM varchar(10) NOT NULL,
     foreign key (NIM) REFERENCES siswa(NIM)
 );
 
-insert into siswa (Nama, NIM)
-values ('Joko','2440011123');
+# insert into siswa (Nama, NIM)
+# values ('Joko','1234567890'),
+#        ('VIctor','1234567891'),
+#        ('Daniel','1234567892');
+#
+# insert into absen (ID, Tanggal, NIM)
+# values (1, '2022-03-03 08:40:45', '1234567890'),
+#        (2, '2022-03-03 08:42:48', '1234567891'),
+#        (3, '2022-03-10 08:42:48', '1234567891');
 
-insert into absen (ID, Status, NIM)
-values (12323,1,'2440011123'),(456,1,'2440018847');
 
